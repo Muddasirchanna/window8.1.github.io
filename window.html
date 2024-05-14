@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="./con2.css">
+    <style>
+      *,::before,::after{
+        margin: 0;
+        padding: 0;
+      }
+        .container{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            gap: 1vw;
+            background: rgb(3, 3, 150);
+        }
+        .container1{
+            height: 90vh;
+            width: 65vw;
+            text-align: center;
+            margin-top: 5vh;
+            display: grid;
+            grid-template-rows: 0.8fr 0.8fr 1.5fr 1fr 0.5fr 1.1fr;
+            grid-template-columns: 0.4fr 0.2fr 0.2fr 0.7fr 0.4fr 0.19fr 0.19fr;
+            gap: 0.3vw;
+            grid-template-areas: 
+            "mail mail mail calender explorer video headphones"
+            "mail mail mail calender explorer games camera"
+            "sports sports sports money tips drive drive"
+            "people skype skype weather photos onenote onenote"
+            "desk PC setting weather news news news"
+            "desk file1 file2 weather news news news"
+            ;
+        }
+        @media screen and (max-width:550px) {
+          .container1{
+            width: 99vw;
+            margin-right: 0.5vw;
+            margin-left: 0.5vw;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+            grid-template-columns: 1fr;
+            gap: 0.5vh;
+            grid-template-areas: 
+            "mail" "calender" "explorer" "video" "headphones" "games" "camera" "sports" "money" "tips" "drive" "people"
+            "skype" "photos" "onenote" "desk" "PC" "setting" "weather" "file1" "file2" "news" 
+            ;
+          }
+          .container{
+            height: 565.5vh;
+            display: block;
+            text-align: center;
+            width: 100vw;
+          }
+          }
+        .container1 > div{
+            border-radius: 2px;
+        }
+
+        .container2{
+            height: 90vh;
+            width: 20vw;
+            text-align: center;
+            margin-top: 5vh;
+            display: grid;
+            grid-template-rows: 1fr 1fr 0.8fr;
+            gap: 0.3vw;
+            grid-template-columns: 0.5fr 0.5fr;
+            grid-template-areas: 
+            "store store"
+            "health food"
+            "map read"
+            ;
+        }
+        @media screen and (max-width:550px) {
+            
+            .container2{
+              width: 99vw;
+              margin-right: 0.5vw;
+              margin-left: 0.5vw;
+              grid-template-rows: 1fr 1fr  1fr 1fr 1fr;
+              grid-template-columns: 1fr;
+              gap: 0.5vw;
+              margin-top: 338vh;
+              grid-template-areas: 
+              "store" 
+              "health"
+              "food"
+              "map"
+              "read"
+              ;
+            }
+            
+          }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container1">
+            <div class="mail">
+                <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="/icons8-mail-50.png" alt="Avatar" style="width:3vw;height:7vh;">
+      <p style="color: #fff; margin-right: 19vw; margin-top: 6vh; font-size: 0.8vw;">Mail</p>
+    </div>
+    <div class="flip-card-back"> 
+      <p>Architect & Engineer</p> 
+      <p>Creator Jahanzaib</p>
+    </div>
+  </div>
+</div>
+                </div>
+            <div class="calender">
+                <div class="flip-calendar">
+                    <div class="flip-calendar-inner">
+                      <div class="flip-calendar-front">
+                        <img src="./icons8-calendar-32.png" alt="Avatar" style="width:4vw;height:7vh;">
+                        <p style="color: #fff; margin-right: 14vw; margin-top: 6vh; font-size: 0.8vw;">Calendar</p>
+                      </div>
+                      <div class="flip-calendar-back"> 
+                        <p>Architect & Engineer</p> 
+                        <p>Creator Jahanzaib</p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="explorer">
+                <div class="flip-explorer">
+                    <div class="flip-explorer-inner">
+                      <div class="flip-explorer-front">
+                        <img src="./icons8-internet-explorer-30.png" alt="Avatar" style="width:4vw;height:7vh;">
+                        <p style="color: #fff; margin-right: 4vw; margin-top: 6vh; font-size: 0.8vw;">Internet Explorer</p>
+                      </div>
+                      <div class="flip-explorer-back"> 
+                        <p>Architect & Engineer</p> 
+                        <p>Creator Jahanzaib</p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="video">
+              <div class="flip-video">
+                <div class="flip-video-inner">
+                  <div class="flip-video-front">
+                    <img src="./icons8-video-25.png" alt="Avatar" style="width:2.5vw;height:3.5vh;">
+                  </div>
+                  <div class="flip-video-back">  
+                    <p>Videos</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="headphones">
+              <div class="flip-headphones">
+              <div class="flip-headphones-inner">
+                <div class="flip-headphones-front">
+                  <img src="./icons8-headphones-64.png" alt="Avatar" style="width:2.5vw;height:3.5vh;">
+                </div>
+                <div class="flip-headphones-back">  
+                  <p style="font-size: 0.8vw;">Headphones</p>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="games">
+              <div class="flip-games">
+                <div class="flip-games-inner">
+                  <div class="flip-games-front">
+                    <img src="./icons8-game-48.png" alt="Avatar" style="width:2.5vw;height:3.5vh;">
+                  </div>
+                  <div class="flip-games-back">  
+                    <p>Games</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="camera">
+              <div class="flip-camera">
+                <div class="flip-camera-inner">
+                  <div class="flip-camera-front">
+                    <img src="./icons8-slr-camera-24.png" alt="Avatar" style="width:2.5vw;height:3.5vh;">
+                  </div>
+                  <div class="flip-camera-back">  
+                    <p>Camera</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sports">
+              <div class="flip-sports">
+                <div class="flip-sports-inner">
+                  <div class="flip-sports-front">
+                    <img src="./icons8-trophy-90.png" alt="Avatar" style="width:4vw;height:8.5vh;">
+                    <p style="color: #fff; margin-right: 18.5vw; margin-top: 4vh; font-size: 0.8vw;">Sports</p>
+                  </div>
+                  <div class="flip-sports-back">  
+                    <p>Sports</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="money">
+              <div class="flip-money">
+                <div class="flip-money-inner">
+                  <div class="flip-money-front">
+                    <img src="./icons8-total-sales-100.png" alt="Avatar" style="width:4vw;height:8.5vh;">
+                    <p style="color: #fff; margin-right: 14vw; margin-top: 4vh; font-size: 0.8vw;">Money</p>
+                  </div>
+                  <div class="flip-money-back">  
+                    <p>Do Something to Earn Something</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="help">
+              <div class="flip-help">
+                <div class="flip-help-inner">
+                  <div class="flip-help-front">
+                    <img src="./icons8-help-48.png" alt="Avatar" style="width:6vw;height:9vh;">
+                    <p style="color: #fff; margin-right: 5vw; margin-top: 5vh; font-size: 0.8vw;">Help and Tips</p>
+                  </div>
+                  <div class="flip-help-back"> 
+                    <p>Architect & Engineer</p> 
+                    <p>Creator Jahanzaib</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="drive">
+              <div class="flip-drive">
+                <div class="flip-drive-inner">
+                  <div class="flip-drive-front">
+                    <img src="./icons8-onedrive-50.png" alt="Avatar" style="width:4vw;height:9vh;">
+                    <p style="color: #fff; margin-right: 5vw; margin-top: 5vh; font-size: 0.8vw;">OneDrive</p>
+                  </div>
+                  <div class="flip-drive-back"> 
+                    <p>Architect & Engineer</p> 
+                    <p>Creator Jahanzaib</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="people">
+              <div class="flip-people">
+                <div class="flip-people-inner">
+                  <div class="flip-people-front">
+                    <img src="./icons8-user-account-96.png" alt="Avatar" style="width:6vw;height:14vh;">
+                    <p style="color: #fff; margin-right: 6.5vw; margin-top: 5vh; font-size: 0.8vw;">Peoples</p>
+                  </div>
+                  <div class="flip-people-back"> 
+                    <p>Architect & Engineer</p> 
+                    <p>Creator Jahanzaib</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <div class="skype">
+                <div class="flip-skype">
+                  <div class="flip-skype-inner">
+                    <div class="flip-skype-front">
+                      <img src="./icons8-skype-96.png" alt="Avatar" style="width:5vw;height:12vh;">
+                      <p style="color: #fff; margin-right: 6.5vw; margin-top: 5vh; font-size: 0.8vw;">Skypes</p>
+                    </div>
+                    <div class="flip-skype-back"> 
+                      <p>Architect & Engineer</p> 
+                      <p>Creator Jahanzaib</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                <div class="weather">
+                  <div class="flip-weather">
+                    <div class="flip-weather-inner">
+                      <div class="flip-weather-front">
+                        <img src="./icons8-sun-80.png" alt="Avatar" style="width:5vw;height:10vh;">
+                        <p style="color: #fff; margin-right: 14vw; margin-top: 18.5vh; font-size: 0.8vw;">Weather</p>
+                      </div>
+                      <div class="flip-weather-back"> 
+                        <p>Architect & Engineer</p> 
+                        <p>Creator Jahanzaib</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              <div class="photos">
+                <div class="flip-photos">
+                  <div class="flip-photos-inner">
+                    <div class="flip-photos-front">
+                      <img src="./icons8-photos-80.png" alt="Avatar" style="width:5vw;height:13.5vh;">
+                      <p style="color: #fff; margin-right: 7vw; margin-top: 4vh; font-size: 0.8vw;">Photos</p>
+                    </div>
+                    <div class="flip-photos-back"> 
+                      <p>Architect & Engineer</p> 
+                      <p>Creator Jahanzaib</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <div class="onenote">
+              <div class="flip-onenote">
+                <div class="flip-onenote-inner">
+                  <div class="flip-onenote-front">
+                    <img src="./icons8-microsoft-onenote-80.png" alt="Avatar" style="width:6vw;height:12vh;">
+                    <p style="color: #fff; margin-right: 5.5vw; margin-top: 5.5vh; font-size: 0.8vw;">OneNote</p>
+                  </div>
+                  <div class="flip-onenote-back"> 
+                    <p>Architect & Engineer</p> 
+                    <p>Creator Jahanzaib</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="desk">
+              <div class="flip-desk">
+                <div class="flip-desk-inner">
+                  <div class="flip-desk-front">
+                    <p style="color: #fff; margin-right: 6vw; margin-top: 18.2vh; font-size: 0.8vw;">Desktop</p>
+                  </div>
+                  <div class="flip-desk-back"> 
+                    <p>Architect & Engineer</p> 
+                    <p>Creator Jahanzaib</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <div class="PC">
+                <div class="flip-PC">
+                  <div class="flip-PC-inner">
+                    <div class="flip-PC-front">
+                      <img src="./icons8-desktop-96.png" alt="Avatar" style="width:2vw;height:3.5vh;">
+                    </div>
+                    <div class="flip-PC-back">  
+                      <p style="margin-top: 5vh;">PC</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="setting">
+                <div class="flip-setting">
+                  <div class="flip-setting-inner">
+                    <div class="flip-setting-front">
+                      <img src="./icons8-setting-64.png" alt="Avatar" style="width:2vw;height:3.5vh;">
+                    </div>
+                    <div class="flip-setting-back">  
+                      <p style="margin-top: 5vh;">Setting</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <div class="news">
+              <div class="flip-news">
+                <div class="flip-news-inner">
+                  <div class="flip-news-front">
+                    <img src="./icons8-google-news-128.png" alt="Avatar" style="width:6.5vw;height:9vh;">
+                    <p style="color: #fff; margin-right: 18vw; margin-top: 2.2vh; font-size: 0.8vw;">News</p>
+                  </div>
+                  <div class="flip-news-back"> 
+                    <p>Architect & Engineer</p> 
+                    <p>Creator Jahanzaib</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <div class="file1">
+                <div class="flip-file1">
+                  <div class="flip-file1-inner">
+                    <div class="flip-file1-front">
+                      <img src="./icons8-documents-folder-96.png" alt="Avatar" style="width:2.5vw;height:8vh;">
+                    </div>
+                    <div class="flip-file1-back">  
+                      <p>Document Folder</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <div class="file2">
+              <div class="flip-file2">
+                <div class="flip-file2-inner">
+                  <div class="flip-file2-front">
+                    <img src="./icons8-pictures-folder-100.png" alt="Avatar" style="width:2.5vw;height:8vh;">
+                  </div>
+                  <div class="flip-file2-back"> 
+                    <p>Pictures folder</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="container2">
+            <div class="store">
+              <div class="flip-store">
+                <div class="flip-store-inner">
+                  <div class="flip-store-front">
+                    <img src="./icons8-windows-10-store-128.png" alt="Avatar" style="width:4vw;height:15vh;">
+                    <p style="color: #fff; margin-right: 15.5vw; margin-top: 7.5vh; font-size: 0.8vw;">Store</p>
+                  </div>
+                  <div class="flip-store-back"> 
+                    <p>Architect & Engineer</p> 
+                    <p>Creator Jahanzaib</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="health">
+              <div class="flip-health">
+                <div class="flip-health-inner">
+                  <div class="flip-health-front">
+                    <img src="./icons8-heart-with-pulse-100.png" alt="Avatar" style="width:5vw;height:12.5vh;">
+                    <p style="color: #fff; margin-right: 3vw; margin-top: 5vh; font-size: 0.8vw;">Health & Fitness</p>
+                  </div>
+                  <div class="flip-health-back"> 
+                    <p>Architect & Engineer</p> 
+                    <p>Creator Jahanzaib</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="food">
+              <div class="flip-food">
+                <div class="flip-food-inner">
+                  <div class="flip-food-front">
+                    <img src="./icons8-dead-food-100.png" alt="Avatar" style="width:5vw;height:12.5vh;">
+                    <p style="color: #fff; margin-right: 6vw; margin-top: 5vh; font-size: 0.8vw;">Food</p>
+                  </div>
+                  <div class="flip-food-back"> 
+                    <p>Architect & Engineer</p> 
+                    <p>Creator Jahanzaib</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="map">
+              <div class="flip-map">
+                <div class="flip-map-inner">
+                  <div class="flip-map-front">
+                    <img src="./icons8-world-map-90.png" alt="Avatar" style="width:6vw;height:11.5vh;">
+                    <p style="color: #fff; margin-right: 6vw; margin-top: 4vh; font-size: 0.8vw;">Maps</p>
+                  </div>
+                  <div class="flip-map-back"> 
+                    <p>Architect & Engineer</p> 
+                    <p>Creator Jahanzaib</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="read">
+              <div class="flip-read">
+                <div class="flip-read-inner">
+                  <div class="flip-read-front">
+                    <img src="./icons8-ereader-90.png" alt="Avatar" style="width:4vw;height:11.5vh;">
+                    <p style="color: #fff; margin-right: 4vw; margin-top: 4vh; font-size: 0.8vw;">Reading list</p>
+                  </div>
+                  <div class="flip-read-back"> 
+                    <p>Architect & Engineer</p> 
+                    <p>Creator Jahanzaib</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
